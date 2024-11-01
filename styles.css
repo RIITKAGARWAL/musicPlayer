@@ -1,0 +1,243 @@
+* {
+margin : 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui;
+}
+
+html,body {
+height: 100%;
+width: 100%;
+color: white;
+background: rgb(5,85,62);
+background: linear-gradient(335deg, rgba(5,85,62,1) 37%, rgba(22,10,232,1) 62%, rgba(151,15,187,1) 87%, rgba(0,129,255,0.773546918767507) 88%, rgba(51,104,142,1) 95%);}
+
+header{
+    height: 70px;
+    background: black;
+    color: green;
+    font-weight: 400;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+header img{
+    padding: 4px 8px ;
+}
+
+header div{
+    padding: 4px 20px;
+}
+
+header :hover{
+    transform: translateY(-10px);
+    transition: 500ms;
+    cursor:pointer;
+    border-radius: 20px;
+    /* padding: 10px; */
+    background-color: transparent;
+    box-shadow: 2px 2px 10px white, 
+    -2px -2px 10px rgb(13, 221, 236),
+    -2px -2px 10px rgb(46, 4, 233),
+    2px 2px 10px rgb(243, 8, 117);
+
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    animation: beauty2 12s infinite;
+
+
+}
+
+.left , .right{
+    width:50%;
+    height: 100%;
+    background-color: rgb(7, 7, 7);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.thumbnail-div{
+    width: 50%;
+    height:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.thumbnail-div .gif{
+    position: absolute;
+    
+    border-radius: 40px; 
+    animation: beauty 6s infinite;
+    
+}
+
+.thumbnail-div .gif:hover{
+    transform: translateY(-20px);
+    transition: 500ms;
+    cursor:pointer;
+    box-shadow: 2px 2px 10px rgb(71, 255, 25), 
+    -2px -2px 10px rgb(236, 65, 13),
+    -2px -2px 10px rgb(46, 4, 233),
+    2px 2px 10px rgb(243, 8, 117);
+}
+
+#thumbnail{
+    height: 60%;
+    width: 60%;
+    padding: 1em;
+    margin-top: 1em;
+    
+    background-size: contain;
+    border-radius: 50px;
+    box-shadow: 2px 2px 10px white, 
+    -2px -2px 10px rgb(13, 221, 236),
+    -2px -2px 10px rgb(46, 4, 233),
+    2px 2px 10px rgb(243, 8, 117);
+    animation: beauty 8s infinite;
+}
+
+@keyframes beauty{
+    25%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: rotateY(20deg);
+
+    }
+    75%{
+        transform: rotateX(20deg);
+    }
+    100%{
+        transform: translateX(5px);
+    }
+}
+@keyframes beauty2{
+    25%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: rotateY(10deg);
+
+    }
+    75%{
+        /* transform: rotateX(20deg); */
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+#thumbnail:hover{
+    transform: translateY(30px);
+    transition: 500ms;
+    cursor:pointer;
+}
+
+.left .volume-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.volume-div img:hover{
+    transform: translateY(-10px);
+    transition: 500ms;
+    cursor:pointer;
+}
+
+.left .volume-div input{
+    width: 30%;
+    -webkit-appearance: none;
+    background: rgb(14,237,30);
+    background: linear-gradient(0deg, rgba(14,237,30,1) 15%, rgba(144,253,29,1) 50%, rgba(69,252,159,0.9836309523809523) 81%);    border-radius: 9999px;
+
+    color: green;
+    height: 0.5em;
+}
+
+
+
+.right .album-info{
+    height: 80%;
+    width: 80%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: transparent;
+    box-shadow: 2px 4px 10px rgb(237, 238, 237), 
+    -2px -6px 10px rgb(236, 65, 13),
+    -2px -1px 10px rgb(233, 126, 4),
+    2px 3px 10px rgb(161, 82, 8);
+    color: rgb(12, 158, 255);
+    border-radius: 20px;
+    
+}
+
+.right .album-info .songname{
+font-size: 2.5rem;
+margin-top: 1em;
+}
+
+.right .album-info .artistname{
+    font-size: 1.5rem;
+    color: rgb(250, 252, 253);
+
+
+}
+.right .controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+
+.left .volume-div img, .right .controls img{
+    background: transparent;
+    box-shadow: 2px 2px 10px rgb(71, 255, 25), 
+    -2px -2px 10px rgb(236, 65, 13),
+    -2px -2px 10px rgb(46, 4, 233),
+    2px 2px 10px rgb(243, 8, 117);
+    border-radius: 50%;
+    padding: 8px;
+}
+
+.right .controls img:hover
+{
+    transform: translateY(-10px);
+    transition: 500ms;
+    cursor:pointer;
+}
+
+#song-duration{
+    margin-top:1em;
+    width: 80%;
+    -webkit-appearance: none;
+    background: rgb(234, 35, 252);
+    background: linear-gradient(0deg, rgb(245, 66, 236) 15%, rgb(214, 2, 48) 50%, rgba(160, 8, 21, 0.984) 81%);    border-radius: 9999px;
+
+    color: green;
+    height: 0.5em;
+}

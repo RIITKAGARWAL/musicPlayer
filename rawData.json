@@ -1,0 +1,47 @@
+{
+    "songs": [
+        {
+            "id": "_1",
+            "thumbnail": "./picture/humnava mere.jpg",
+            "songname": "Humnava Mere",
+            "file": "song/Humnava-Mere(PaglaSongs).mp3",
+
+            "artistname": "Jubin Nautiyal"
+        },
+        {
+            "id": "_2",
+            "thumbnail": "./picture/kithe chaliye tu.jpg",
+            "songname": "Kithe-Chaliye-Tu",
+            "file": "song/Kithe-Chaliye-Tu(PaglaSongs).mp3",
+            "artistname": "Arijit Singh"
+        },
+        {
+            "id": "_3",
+            "thumbnail": "./picture/music3.jpg",
+            "songname": "Lut Gaye",
+            "file": "song/Lut-Gaye(PaglaSongs).mp3",
+            "artistname": "Jubin Nautiyal"
+        },
+        {
+            "id": "_4",
+            "thumbnail": "./picture/music4.jpg",
+            "songname": "Thoda Thoda Pyaar",
+            "file": "song/Thoda-Thoda-Pyar(PaglaSongs).mp3",
+            "artistname": " Stebin Ben, Nilesh Ahuja"
+        },
+        {
+            "id": "_5",
+            "thumbnail": "./picture/iss qadar.jpg",
+            "songname": "Is Qadar",
+            "file": "song/Is-Qadar(PaglaSongs).mp3",
+            "artistname": "Darshan Raval, Tulsi Kumar"
+        },
+        {
+            "id": "_6",
+            "thumbnail": "./picture/zalima.jpg",
+            "songname": "Zalima Coca Cola",
+            "file": "./song/Zalima-Coca-Cola-Pila-De(PaglaSongs).mp3",
+            "artistname": "Shreya Ghoshal"
+        }
+    ]
+}
